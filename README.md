@@ -1,4 +1,4 @@
-# 🛍️ Exclusive — Simple E-commerce Website
+# 🛍️ Exclusive — Simple E-Commerce
 
 Exclusive è un progetto e-commerce **moderno e minimale**, sviluppato con [Next.js](https://nextjs.org/) (React), **TypeScript**, **TailwindCSS** e **Zustand** per la gestione dello stato globale. Questo progetto mi ha dato una grande mano a capire meglio il funzionamento di Zustand, fare progressi in Next JS capendo come risolvere al meglio possibili errori dovuti a Server e Client Components, e migliorare le mie abilità in TypeScript e TailwindCSS. Presto sarà aggiornato con nuove funzionalità.
 
