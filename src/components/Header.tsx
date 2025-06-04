@@ -16,7 +16,7 @@ import Link from "next/link";
 import { navLinks } from "@/lib/data";
 
 // Hooks
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 // Zustand Stores
 import { useFavoritesStore } from "@/app/store/useFavoritesStore";
@@ -69,6 +69,10 @@ export default function Header() {
     setUserSearchQuery("");
     nextRouter.push(`/search?q=${encodeURIComponent(userQuery)}`);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = mobileNavOpen ? "hidden" : "auto";
+  }, [mobileNavOpen]);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-neutral-100 z-50 border-b border-neutral-400">

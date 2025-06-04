@@ -13,12 +13,16 @@ type MobileNavProps = {
 };
 
 const MobileNav = ({ setMobileNavOpen }: MobileNavProps) => {
+  const closeNavOnClick = (): void => {
+    setMobileNavOpen(false);
+  };
+
   return (
     <nav className="md:hidden fixed grid inset-0 z-50 bg-neutral-200 p-16 overflow-hidden">
       {/*====== NavLinks ======*/}
       <ul className="flex flex-col gap-12 text-4xl font-medium">
         {navLinks.map((link) => (
-          <li key={link.name}>
+          <li key={link.name} onClick={closeNavOnClick}>
             <Link
               className="hover:text-[42px] transition-all duration-300 hover:underline underline-offset-8 decoration-neutral-900"
               href={link.href}
