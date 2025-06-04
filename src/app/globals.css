@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Fonts */
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3b82f6;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 1;
+  border-radius: 50%;
+}
